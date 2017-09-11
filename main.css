@@ -1,0 +1,44 @@
+p{
+	color:red;
+	font-size:20px;
+}
+
+h1{
+	color:#A3A300;
+}
+
+#background {
+background-color:black;
+color:red;
+}
+
+.trivia-wrap {
+	border:10px white double;
+	padding-left:25px;
+	margin:left:25px;
+}
+
+.navitem{
+	list-style-type:none;
+	display: inline;
+	padding-right:1.5em;
+}:;
+
+#navmenu{
+width:250px;
+height:30px;
+margin:auto;
+font-size:20px;
+}
+
+a:link{ 
+color:red;
+} 
+
+a:hover{
+	color:purple;
+}
+
+a:active{ 
+color:red;
+}

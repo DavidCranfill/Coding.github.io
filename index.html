@@ -1,0 +1,91 @@
+
+<html> 
+	<head>
+    <link type="text/css"rel="stylesheet" href="main.css"/>
+    <title> Subnautica Leviathans</title> 
+    <script>
+    function banner(){ 
+        var text = confirm("Did You Really Want to Click on My Banner?"); 
+            return text; 
+        }
+    
+    function answer(){ 
+    var text = document.getElementsByName("trivia"); 
+    var selection = false; 
+    var message = "";
+    for( var i = 0; i < text.length; i++) { 
+        if(text[i].value == "Sea Emperor Leviathan" && text[i].checked == true) { 
+            selection = true; 
+        } //end if statement 
+    } //end for loop
+
+if(selection == true) {
+        message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+    } else { 
+        message = message + "<b><p style='color:red'>You died and lost some belongings</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+}
+</script>
+
+    <header>Subnautica Leviathans</header>
+       <style>
+        p{
+            color:red;
+            font-size:20px;
+        }
+
+       </style>
+    </head> 
+    <footer>By Swaggyspaceman</footer>
+    <body id="background"> 
+    
+    <a href="http://subnautica.wikia.com" onclick="return banner()">
+        <header id="header"> Got ot the Subnautica Wiki here! </header>
+    </a>
+        <nav>
+            <ul id="navmenu">
+             <li class="navitem"> <a href="index.html"> Home</a> </li>
+             <li class="navitem"> <a href="games.html"> Home</a> </li>
+             <li class="navitem"> <a href="videos.html"> Home</a> </li> 
+            </ul>
+        </nav>
+    <h1>This is only a test website.</h1>
+    	
+        <p>This is a <b>warning</b> telling you to <i>stay away</i> from these creatures <u>at all times!</u> 
+    	</p>
+    	<ol>
+    		<li>The Reaper Leviathan</li>
+    		<li>The Ghost Leviathan/Phantom Leviathan</li>
+    		<li>The Sea Dragon Leviathan</li>
+    		<li>The Sea Emperor Leviathan.</li>
+    	</ol>
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vtsyXKSmBWE" frameborder="0" allowfullscreen></iframe>
+        <audio width="400" height="220" controls autoplay>
+            <source src="https://soundcloud.com/kamakazi/ghost-leviathan-20" type="audio/mpeg">
+        </audio>
+        <audio width="400" height="220" controls autoplay>
+            <source src="https://soundcloud.com/kamakazi/seadragon" type="audio/mpeg">
+        </audio> 
+        <h2> Leviathan Quiz:</h2>
+        <p>Which <span>Leviathan</span> is the largest?</p>
+        <form>
+            <div id="response"> </div>
+            <input type="radio" name="trivia" value="Reaper Leviathan"> Reaper Leviathan <br>
+            <input type="radio" name="trivia" value="Ghost Leviathan"> Ghost Leviathan <br>
+            <input type="radio" name="trivia" value="Sea Dragon Leviathan"> Sea Dragon Leviathan <br>
+            <input type="radio" name="trivia" value="Sea Emperor Leviathan"> Sea Emperor Leviathan <br>
+            <input type="button" value="Click Here" onclick="answer()">
+        </form>
+
+		  <img src="https://vignette2.wikia.nocookie.net/subnautica/images/6/6b/Reaper_Mesas.png/revision/latest?cb=20170721034032" />
+		  <img src="https://vignette2.wikia.nocookie.net/subnautica/images/4/47/GL_NBKZ_Night.png/revision/latest?cb=20170808005428" />
+		  <img src="https://vignette2.wikia.nocookie.net/subnautica/images/4/4a/SeaDragonLeviathanMeteor.jpg/revision/latest?cb=20160920212734" />
+		  <center><img src="https://i.ytimg.com/vi/MR-86BgBJk0/maxresdefault.jpg" /></center>
+		  <hr>
+		  <center>Swaggyspaceman <a href="https://www.youtube.com/channel/UCSDfSSuWQd8lPFCCdfRVuFQ/featured"> Subscribe to my Youtube channel here! -></a> </center>
+
+    </body> 
+</html>
